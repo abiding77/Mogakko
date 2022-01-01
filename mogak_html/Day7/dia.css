@@ -1,0 +1,24 @@
+.first {
+    position: fixed;
+    background-color: rgb(64, 154, 182);
+    font-family: 'Single Day', cursive;
+    top: 0px;
+    left: 400px;
+    width: 1000px;
+}
+
+.second {
+    background-color: gray;
+    position: relative;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 20px;
+    width: 500px;
+    height: 800px;
+    top: 100px;
+    left: 600px;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}

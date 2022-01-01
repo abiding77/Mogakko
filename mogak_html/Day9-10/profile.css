@@ -1,0 +1,27 @@
+.index {
+    
+    background-color: rgba(70, 57, 247, 0.13);
+    display: inline-block;
+    padding-top: 10px;
+}
+.contents{
+    padding-top: 15px;
+}
+body {
+    background-image: url("./bodyimage.jpg");
+    background-size: cover;
+    font-weight: bolder;
+    padding-left: 20px;
+}
+h1 {
+    font-family: 'Black Han Sans', sans-serif;
+    font-weight: lighter;
+}
+
+h2 {
+    font-family: 'Black Han Sans', sans-serif;
+    font-weight: lighter;
+}
+div{
+    font-family: 'Single Day', cursive;
+}
