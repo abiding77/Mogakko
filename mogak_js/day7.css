@@ -1,0 +1,32 @@
+.contain {
+    margin: 100px;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Single Day', cursive;
+    font-size: large;
+}
+
+#btn1 {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-right: -6px;
+}
+
+#btn3 {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: -6px;
+}
+
+.btn button{
+    border: 1px solid skyblue; 
+    background-color: rgba(0,0,0,0);
+    color: skyblue; 
+    padding: 5px;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Single Day', cursive;
+    font-size: large;
+}
+.btn button:hover{
+    color:white;
+    background-color: skyblue;
+}

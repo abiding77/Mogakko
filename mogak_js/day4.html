@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Console Log</title>
+        <link rel="stylesheet" href="day4.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Single+Day&display=swap');
+        </style>
+    </head>
+    <body>
+        <button class="btn" onclick=upcount()>click Me</button>
+        <script>
+            let count = 1
+            function upcount(){
+                console.log(count++)
+                if(count>10){
+                    console.log("10이 최대치입니다. 다시 리셋합니다.");
+                    count=1;
+                }
+            }
+        </script>
+    </body>
+</html>
