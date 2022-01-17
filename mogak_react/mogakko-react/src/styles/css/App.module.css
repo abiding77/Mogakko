@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Fredoka One";
+  src: url("../fonts/FredokaOne-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Single Day";
+  src: url("../fonts/SingleDay-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nanum Gothic";
+  src: url("../fonts/NanumGothic-Regular.ttf") format("truetype");
+}
+
+.container{
+  text-align: center;
+  padding-top: 30px;
+}
+.index{
+  font-family: "Fredoka One";
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+
+button {
+  position: relative;
+  border: none;
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 15px;
+  font-family: "Nanum Gothic";
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+  background: linear-gradient(-45deg, #33ccff 0%, #ff99cc 100%);
+  color: white;
+}
