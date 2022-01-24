@@ -17,7 +17,7 @@ function Layout({ children, activeMenu }) {
                 menuState
                 ?<Menu activeMenu={activeMenu} /> :null
             }
-          <div className={styles.contents}>{children}</div>
+          <div className={styles.contents} style={!menuState? {marginLeft:'0'}:null}>{children}</div>
         </div>
       </div>
     );
