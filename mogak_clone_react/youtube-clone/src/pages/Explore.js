@@ -1,10 +1,35 @@
-import ContentsLayout from '../components/shared/ContentsLayout';
 import Layout from '../components/shared/Layout';
-import styles from './Explore.module.css'
+import ContentsLayout from '../components/shared/ContentsLayout';
+import youtubeData from '../data/youtubeData.json';
+import ExploreCard from '../components/explore/ExploreCard';
+import styles from './Explore.module.css';
+import { useState } from 'react';
+
 function Explore() {
+
+  const filterArray = ['전체', 'BTS','NCT','라디오스타'];
+  const [filterIndex, setFilter] = useState(0);
+  function setUp(data){
+    let filterWord = filterArray[filterIndex];
+    if(filterWord == '전체'){
+      filterWord = '';
+    }
+    return data.title.includes(filterWord) || data.description.includes(filterWord);
+  }
   return (
     <Layout activeMenu="explore">
-      <ContentsLayout>컨텐츠컨텐츠컨텐츠</ContentsLayout>
+      <div className={styles.filterArray}>
+        {filterArray.map((filter,index) => (
+          <button className={filterIndex == index ? styles.selectindex : ''}
+            onClick={() => setFilter(index)} key={index}>{filter}</button>
+        ))}
+      </div>
+      <ContentsLayout>
+        {youtubeData['data'].map(function (data, index) {
+          if(setUp(data))
+            return <ExploreCard key={`explore-card-${index}`} data={data} />;
+        })}
+      </ContentsLayout>
     </Layout>
   );
 }
