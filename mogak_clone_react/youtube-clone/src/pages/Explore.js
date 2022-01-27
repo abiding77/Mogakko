@@ -1,7 +1,7 @@
 import Layout from '../components/shared/Layout';
 import ContentsLayout from '../components/shared/ContentsLayout';
 import youtubeData from '../data/youtubeData.json';
-import ExploreCard from '../components/explore/ExploreCard';
+import HorizontalCard from '../components/shared/HorizontalCard';
 import styles from './Explore.module.css';
 import { useState } from 'react';
 
@@ -27,7 +27,7 @@ function Explore() {
       <ContentsLayout>
         {youtubeData['data'].map(function (data, index) {
           if(setUp(data))
-            return <ExploreCard key={`explore-card-${index}`} data={data} />;
+            return <HorizontalCard key={`explore-card-${index}`} data={data} />;
         })}
       </ContentsLayout>
     </Layout>
