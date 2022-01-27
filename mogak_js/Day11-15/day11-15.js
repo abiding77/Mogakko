@@ -15,7 +15,7 @@ var jsonData =
 [
     {
         "question" : "일어나",
-        "answer" : "큐셀아 안녕!?",
+        "answer" : "큐셀아 안녕~?",
     },
     {
         "question" : "불꺼",
